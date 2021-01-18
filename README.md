@@ -1,13 +1,13 @@
-# stockPricePredict
+# Stock Price Predict
 
 ## Prepare the database:
 
-### Load the database
+#### Load the database
 ```Python
 df = pd.read_csv("NSE-Tata-Global-Beverages-Limited.csv")
 ```
 
-### Gernerate a new dataset that only contains Date and Close price.
+#### Gernerate a new dataset that only contains Date and Close price.
 ```Python
 new_dataset = pd.DataFrame(index=range(0,len(df)), columns=['Date','Close'])
 for i in range(0, len(df)):
@@ -18,7 +18,7 @@ new_dataset.index = new_dataset["Date"]
 new_dataset.drop("Date",axis=1,inplace=True)
 ```
 
-### Normalize the new filtered dataset
+#### Normalize the new filtered dataset
 
 ```Python
 close_value = new_dataset.to_numpy()
@@ -27,7 +27,7 @@ scaler = MinMaxScaler(feature_range=(0,1))
 scaled_data = scaler.fit_transform(close_value)
 ```
 
-# |train_data| : |valid_data| = 4 : 1
+#### |train_data| : |valid_data| = 4 : 1
 
 ```Python
 len_data = len(close_value)
