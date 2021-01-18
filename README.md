@@ -73,7 +73,7 @@ for i in closing_price:
     closing_list.append(i[0])
 ```
 <p align="center">
-	<img src="https://github.com/bochendong/stockPricePredict/blob/master/stock_pred.py"
+	<img src="https://github.com/bochendong/stockPricePredict/blob/master/result.png"
         width="800" height="400">
 	<p align="center">
 </p>
