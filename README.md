@@ -1,4 +1,8 @@
 # Stock Price Predict
+Stock Price Prediction using LSTM and tensorflow
+* [Prepare the database](https://github.com/bochendong/stockPricePredict#prepare-the-database)
+* [Build and train Model](https://github.com/bochendong/stockPricePredict#build-and-train-model)
+* [Show Prediction Result](https://github.com/bochendong/stockPricePredict#show-prediction-result)
 
 ## Prepare the database:
 
